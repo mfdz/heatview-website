@@ -104,10 +104,10 @@
         var ImprintGDPR = function ImprintGDPR() {
           return react.createElement(
             "div",
-            { className: "imprint-container", style: {position: 'fixed', bottom: 8, left: 8, 'font-size': 10, 'font-family':'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif', zIndex: 10000} },
+            { className: "imprint-container", style: {position: 'fixed', width: "50%", bottom: 8, left: 8, 'font-size': 10, 'font-family':'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif', zIndex: 10000} },
             react.createElement("style", 
               {type: "text/css"},
-              "a:visited { color: rgb(106, 106, 133) !important;}"
+              "a:visited { color: rgb(106, 106, 133) !important;} span { color: rgb(106, 106, 133)}"
             ),
             react.createElement("a", 
               {href: "https://mfdz.de/impressum"},
@@ -117,6 +117,10 @@
             react.createElement("a", 
               {href: "https://mfdz.de/datenschutz"},
               "Datenschutz"
+            ),
+            react.createElement("span", 
+              {},
+              " Daten: © Grubitzsch P., Lißner S., Huber S., Springer T., [2021] Technische Universität Dresden, Professur für Rechnernetze und Professur für Verkehrsökologie, © Statistische Ämter des Bundes und der Länder"
             ));
         }
 
@@ -274,9 +278,9 @@
         "radiusField": null,
         "radiusScale": "linear"
       }
-    },{"id":"nwsa5l","type":"point","config":{"dataId":"Unfalldaten","label":"Unfallorte","color":[23,184,190],"columns":{"lat":"LAT","lng":"LON","altitude":null},"isVisible":false,"visConfig":{"radius":10,"fixedRadius":false,"opacity":0.4,"outline":false,"thickness":2,"strokeColor":null,"colorRange":{"name":"Unfalltyp nach M UKO","type":"custom","category":"Custom","colors":["#027519","#e4e40d","#d61c02","#ffffff","#0d1ce9","#f3901e","#555555"]},"strokeColorRange":{"name":"Global Warming","type":"sequential","category":"Uber","colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]},"radiusRange":[10,30],"filled":true},"hidden":false,"textLabel":[{"field":null,"color":[255,255,255],"size":18,"offset":[0,0],"anchor":"start","alignment":"center"}]},"visualChannels":{"colorField":{"name":"UTYP1","type":"integer"},"colorScale":"quantize","strokeColorField":null,"strokeColorScale":"quantile","sizeField":{"name":"GEWICHTET","type":"integer"},"sizeScale":"sqrt"}},{"id":"t1vejn","type":"hexagon","config":{"dataId":"Unfalldaten","label":"Unfallschwerpunkte","color":[255,203,153],"columns":{"lat":"LAT","lng":"LON"},"isVisible":false,"visConfig":{"opacity":0.8,"worldUnitSize":0.1,"resolution":8,"colorRange":{"name":"Global Warming","type":"sequential","category":"Uber","colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]},"coverage":1,"sizeRange":[0,500],"percentile":[0,100],"elevationPercentile":[0,100],"elevationScale":5,"colorAggregation":"sum","sizeAggregation":"count","enable3d":false},"hidden":false,"textLabel":[{"field":null,"color":[255,255,255],"size":18,"offset":[0,0],"anchor":"start","alignment":"center"}]},"visualChannels":{"colorField":{"name":"GEWICHTET","type":"integer"},"colorScale":"quantize","sizeField":null,"sizeScale":"linear"}},{"id":"cishih","type":"hexagon","config":{"dataId":"Unfalldaten","label":"M UKO (ohne Sachschäden)","color":[248,149,112],"columns":{"lat":"LAT","lng":"LON"},"isVisible":true,"visConfig":{"opacity":0.8,"worldUnitSize":0.1,"resolution":8,"colorRange":{"name":"Global Warming","type":"sequential","category":"Uber","colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]},"coverage":1,"sizeRange":[0,500],"percentile":[96.74,100],"elevationPercentile":[0,100],"elevationScale":5,"colorAggregation":"sum","sizeAggregation":"count","enable3d":false},"hidden":false,"textLabel":[{"field":null,"color":[255,255,255],"size":18,"offset":[0,0],"anchor":"start","alignment":"center"}]},"visualChannels":{"colorField":{"name":"M_UKO_WERTUNG_OHNE_SACHSCH","type":"integer"},"colorScale":"quantize","sizeField":null,"sizeScale":"linear"}}],"interactionConfig":
+    },{"id":"nwsa5l","type":"point","config":{"dataId":"Unfalldaten","label":"Unfallorte","color":[23,184,190],"columns":{"lat":"LAT","lng":"LON","altitude":null},"isVisible":false,"visConfig":{"radius":10,"fixedRadius":false,"opacity":0.4,"outline":false,"thickness":2,"strokeColor":null,"colorRange":{"name":"Unfalltyp nach M UKO","type":"custom","category":"Custom","colors":["#027519","#e4e40d","#d61c02","#ffffff","#0d1ce9","#f3901e","#555555"]},"strokeColorRange":{"name":"Global Warming","type":"sequential","category":"Uber","colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]},"radiusRange":[10,30],"filled":true},"hidden":false,"textLabel":[{"field":null,"color":[255,255,255],"size":18,"offset":[0,0],"anchor":"start","alignment":"center"}]},"visualChannels":{"colorField":{"name":"UTYP","type":"string"},"colorScale":"ordinal","strokeColorField":null,"strokeColorScale":"quantile","sizeField":{"name":"GEWICHTET","type":"integer"},"sizeScale":"sqrt"}},{"id":"t1vejn","type":"hexagon","config":{"dataId":"Unfalldaten","label":"Unfallschwerpunkte","color":[255,203,153],"columns":{"lat":"LAT","lng":"LON"},"isVisible":false,"visConfig":{"opacity":0.8,"worldUnitSize":0.1,"resolution":8,"colorRange":{"name":"Global Warming","type":"sequential","category":"Uber","colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]},"coverage":1,"sizeRange":[0,500],"percentile":[0,100],"elevationPercentile":[0,100],"elevationScale":5,"colorAggregation":"sum","sizeAggregation":"count","enable3d":false},"hidden":false,"textLabel":[{"field":null,"color":[255,255,255],"size":18,"offset":[0,0],"anchor":"start","alignment":"center"}]},"visualChannels":{"colorField":{"name":"GEWICHTET","type":"integer"},"colorScale":"quantize","sizeField":null,"sizeScale":"linear"}},{"id":"cishih","type":"hexagon","config":{"dataId":"Unfalldaten","label":"M UKO (ohne Sachschäden)","color":[248,149,112],"columns":{"lat":"LAT","lng":"LON"},"isVisible":true,"visConfig":{"opacity":0.8,"worldUnitSize":0.1,"resolution":8,"colorRange":{"name":"Global Warming","type":"sequential","category":"Uber","colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]},"coverage":1,"sizeRange":[0,500],"percentile":[96.74,100],"elevationPercentile":[0,100],"elevationScale":5,"colorAggregation":"sum","sizeAggregation":"count","enable3d":false},"hidden":false,"textLabel":[{"field":null,"color":[255,255,255],"size":18,"offset":[0,0],"anchor":"start","alignment":"center"}]},"visualChannels":{"colorField":{"name":"M_UKO_WERTUNG_OHNE_SACHSCH","type":"integer"},"colorScale":"quantize","sizeField":null,"sizeScale":"linear"}}],"interactionConfig":
         {"tooltip":{"fieldsToShow":
-          {"Unfalldaten":[{"name":"UART","format":null},{"name":"UTYP1","format":null},{"name":"IstPKW","format":null},{"name":"UKATEGORIE","format":null},{"name":"UJAHR","format":null}],
+          {"Unfalldaten":[{"name":"UART","format":null},{"name":"UTYP","format":null},{"name":"IstPKW","format":null},{"name":"UKATEGORIE","format":null},{"name":"UJAHR","format":null}],
            "Geschwindigkeiten": [{"name": "avg_speed_kmh","format": null},{"name": "visits","format": null}]
         },"compareMode":false,"compareType":"absolute","enabled":true},"brush":{"size":0.5,"enabled":false},"geocoder":{"enabled":false},"coordinate":{"enabled":false}},"layerBlending":"normal","splitMaps":[],"animationConfig":{"currentTime":null,"speed":1}},"mapState":{"bearing":0,"dragRotate":false,"latitude":48.77943226846015,"longitude":9.125788120829505,"pitch":0,"zoom":10.996100418975374,"isSplit":false},"mapStyle":{"styleType":"dark","topLayerGroups":{},"visibleLayerGroups":{"label":true,"road":true,"border":false,"building":true,"water":true,"land":true,"3d building":false},"threeDBuildingColor":[9.665468314072013,17.18305478057247,31.1442867897876],"mapStyles":{}}}};
 
@@ -316,9 +320,17 @@
           
           dataset["data"]["fields"].push({name: "GEWICHTET", format: "", tableFieldIndex: 23, type: "integer", analyzerType: "INT"})
           dataset["data"]["fields"].push({name: "M_UKO_WERTUNG_OHNE_SACHSCH", format: "", tableFieldIndex: 24, type: "integer", analyzerType: "INT"})
+          dataset["data"]["fields"].push({name: "UTYP", format: "", tableFieldIndex: 25, type: "string", analyzerType: "STRING"})
+          
+
           // Weight accidents with fatalities as 7, with heavily injured as 3, else 1
           dataset["data"]["rows"].forEach(row => row.push(row[9]==1?7:row[9]==2?3:1));
           dataset["data"]["rows"].forEach(row => row.push(row[5]>2016?(row[9]==1?5:row[9]==2?5:3):0));
+          
+          const utyp_mapping = ["1 Fahrunfall", "2 Abbiege-Unfall", "3 Einbiegen/Kreuzen-Unfall", 
+            "4 Überschreiten-Unfall", "5 Ruhender Verkehr", "6 Unfall im Längsverkehr", "7 Sonstiger Unfall"]
+
+          dataset["data"]["rows"].forEach(row => row.push(utyp_mapping[row[11]-1]));
 
           store.dispatch(keplerGl.addDataToMap({
             datasets: [dataset, dataset_geschwindigkeiten],
