@@ -2,7 +2,7 @@
 
 Dieses Projekt visualisiert Rad-Unfälle und im Kontext dieser relevante Zusatzinformation, soweit diese als offene Daten bereitgestellt werden.
 
-[[https://github.com/mfdz/heatview-website/blob/master/site/img/card.png|alt=Heatview Visualisierung Unfallorte]]
+![Heatview Visualisierung Unfallorte](https://github.com/mfdz/heatview-website/blob/master/site/img/card.png?raw=true)
 
 Es baut auf dem Datenvisualisierungs-Werkzeug kepler.gl der Firma Uber auf und nutzt derzeit die folgenden Datensätze:
 
