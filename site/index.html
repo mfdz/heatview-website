@@ -325,7 +325,7 @@
 
           // Weight accidents with fatalities as 7, with heavily injured as 3, else 1
           dataset["data"]["rows"].forEach(row => row.push(row[9]==1?7:row[9]==2?3:1));
-          dataset["data"]["rows"].forEach(row => row.push(row[5]>2016?(row[9]==1?5:row[9]==2?5:3):0));
+          dataset["data"]["rows"].forEach(row => row.push(row[5]>2019?(row[9]==1?5:row[9]==2?5:3):0));
           
           const utyp_mapping = ["1 Fahrunfall", "2 Abbiege-Unfall", "3 Einbiegen/Kreuzen-Unfall", 
             "4 Überschreiten-Unfall", "5 Ruhender Verkehr", "6 Unfall im Längsverkehr", "7 Sonstiger Unfall"]
